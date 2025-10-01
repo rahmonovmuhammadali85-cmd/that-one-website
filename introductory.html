@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id="homepage" class="homepage">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="nav">
+                    <li><a href="#homepage">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <i id="icon"class="fa-solid fa-xmark" onclick="toggleOut()"></i>
+                </ul>
+                <i id="icon" class="fa-solid fa-bars" onclick="toggleIn()"></i>
+            </nav>   
+            <div class="header-text">
+                <p>KU Computer Science student</p>
+                <h1>Hi, I'm <span>Muhammad</span><br>Rahmonov from Uzbekistan</h1>
+            </div>
+        </div>
+    </div>
+     <!-- ------- About ------- -->
+     
+    <div class="body">
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-col1">
+                    <img src="images/photo_2025-09-30_16-58-13.jpg" alt="">
+                </div>
+                <div class="abt-col2">
+                    <h1 class="subtitle">About me</h1>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, maiores possimus sequi inventore dolorum provident repellendus voluptatum autem exercitationem rerum, tempora veniam, temporibus iste explicabo fuga debitis molestias delectus qui. Sunt hic libero consequuntur facilis, nihil reiciendis doloribus sapiente temporibus! Vero explicabo harum, sed iusto atque consectetur maxime molestias enim! Quis, aliquid! Quidem, tenetur blanditiis iusto doloremque architecto, optio in saepe, possimus soluta id non dolore quam. Fugiat voluptates eveniet quis vitae obcaecati. Totam eius aspernatur fugit. Quod atque laudantium harum, explicabo maiores in iste corrupti ratione consectetur, sunt asperiores nisi molestiae aliquid veritatis quia non, natus fuga quis totam.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    
+                    <div class="contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web developer</span><br>Junior front-end developer</li>
+                            <li><span>English instructor</span><br>3 years of experience in teaching English</li>
+                            <li><span>Amateur soccer player</span><br>Member of Korea University amateur soccer club</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="education">
+                        <ul>
+                            <li><span>Primary education (2013)</span><br>Russian School №28 in Bukhara, Uzbekistan</li>
+                            <li><span>Secondary education (2017)</span><br>Secondary Specialized School №9 in Bukhara, Uzbekistan</li>
+                            <li><span>Bachelor's Degree (2025)</span><br>Majoring in Computer Science and Engineering in Korea University (고려대학교), Seoul, South Korea</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--------- Contact --------->
+    
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+82 10-1234-5678</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rahmonov_6740" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://t.me/Rahmonov_Muhammadali" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/rahmonov_6740" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Resume Muhammad Rahmonov 02_13_2024 9_52_59 AM (2).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" id="name" required>
+                        <input type="email" name="Email" placeholder="Your e-mail" id="email" required>
+                        <textarea name="Message" rows="6" placeholder="Write something" id="message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span class="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-regular fa-copyright"></i>: Made with <i id="heart" class="fa-solid fa-heart"></i> by Muhammad</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/2f3f647d88.js" crossorigin="anonymous"></script>
+    <script src="portfolio.js"></script>
+</div>
+</body>
+</html>
